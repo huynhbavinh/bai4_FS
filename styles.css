@@ -1,0 +1,158 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        box-sizing: border-box;
+        outline: none;
+    }
+    
+    .container {
+        width: 1180px;
+        margin: 0px auto;
+    }
+    
+    .switch {
+        background: #f8f8f8;
+        display: inline-block;
+        min-width: 100px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 22px;
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        position: relative;
+    }
+    
+    .switch>input[type='checkbox'] {
+        display: none;
+    }
+    
+    .switch>input[type='checkbox']:checked+span {
+        background: #4ccb61;
+    }
+    
+    .switch>span {
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        min-width: 100px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 22px;
+    }
+    
+    .switch>span>span {
+        float: left;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        background: white;
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    
+    .switch>input[type='checkbox']:checked+span>span {
+        float: right;
+    }
+    
+    .switch>input[type='checkbox']+span:after {
+        content: 'OFF';
+        float: right;
+        margin-right: 15px;
+    }
+    
+    .switch>input[type='checkbox']:checked+span:after {
+        content: 'ON';
+        float: left;
+        margin: 0px 0px 0px 15px;
+        color: white;
+    }
+    /********TAB*********/
+    
+    .tab-header>li {
+        display: inline-block;
+        width: 300px;
+        border: rgba(0, 0, 0, 0.4);
+        height: 50px;
+        border-radius: 20px;
+        background-color: green;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        font-size: 25px;
+    }
+    
+    .tab-header>li>label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    
+    .tab-content input[type='radio'] {
+        display: none;
+    }
+    
+    .tab-content {
+        border-radius: 10px;
+        height: 250px;
+        overflow-y: auto;
+        margin-top: 5px;
+        padding: 2px 3px;
+        border: 1px solid black;
+    }
+    
+    .tab-content>div {
+        display: none;
+    }
+    
+    .tab-content>input:checked+div {
+        display: block;
+    }
+    /*******button**********/
+    
+    button {
+        display: inline-block;
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+        width: 150px;
+        text-align: left;
+        padding-left: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        border-radius: 50px;
+        background-color: rgb(98, 226, 251);
+        position: relative;
+        cursor: pointer;
+    }
+    
+    button span:last-child {
+        float: right;
+    }
+    
+    button span:last-child {
+        color: white;
+        background: url(google-png-icons.png) center center no-repeat;
+        background-size: 100%;
+        background-color: rgba(255, 255, 255, 0.4);
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        right: -1px;
+    }
+    
+    button span {
+        font-size: 30px;
+        height: 50px;
+        line-height: 50px;
+        width: 150px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: oblique;
+    }
+    
+    button:hover {
+        background-color: #E779B8;
+    }
